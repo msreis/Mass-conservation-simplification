@@ -1,0 +1,18 @@
+d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
+
+d[Raf*]/dt = + kcat1[RasGTP][Raf]/K1m+[Raf] - kcat2[Pase1][Raf*]/K2m+[Raf*]
+
+d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+
+d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+
+d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+
+d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+
+d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+
+d[Raf]/dt = - kcat1[RasGTP][Raf]/K1m+[Raf] + kcat2[Pase1][Raf*]/K2m+[Raf*]
+
+Size of the original ODE system: 20 right-side terms.
+
