@@ -1,341 +1,341 @@
+d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*])
+
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
 [ERK] = [ERK0] - [p-ERK] - [pp-ERK]
 
-d[Raf*]/dt = + kcat1[RasGTP][Raf]/K1m+[Raf] - kcat2[Pase1][Raf*]/K2m+[Raf*]
-
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+[Raf] = [Raf0] - [Raf*]
 
 [MEK] = [MEK0] - [p-MEK] - [pp-MEK]
 
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
-[Raf] = [Raf0] - [Raf*]
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 1: 14 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
+d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
-d[Raf*]/dt = + kcat1[RasGTP][Raf]/K1m+[Raf] - kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
+
+[Raf] = [Raf0] - [Raf*]
 
 [MEK] = [MEK0] - [p-MEK] - [pp-MEK]
 
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 [p-ERK] = [ERK0] - [ERK] - [pp-ERK]
-
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
-[Raf] = [Raf0] - [Raf*]
 
 Size of DAE system 2: 12 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
+d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
-d[Raf*]/dt = + kcat1[RasGTP][Raf]/K1m+[Raf] - kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
+
+[Raf] = [Raf0] - [Raf*]
 
 [MEK] = [MEK0] - [p-MEK] - [pp-MEK]
 
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
-
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
 [pp-ERK] = [ERK0] - [ERK] - [p-ERK]
 
-[Raf] = [Raf0] - [Raf*]
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 3: 14 right-side terms.
 
 
+d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*])
+
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
 [ERK] = [ERK0] - [p-ERK] - [pp-ERK]
 
-d[Raf*]/dt = + kcat1[RasGTP][Raf]/K1m+[Raf] - kcat2[Pase1][Raf*]/K2m+[Raf*]
+[Raf] = [Raf0] - [Raf*]
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
-
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
 
 [p-MEK] = [MEK0] - [MEK] - [pp-MEK]
 
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
-[Raf] = [Raf0] - [Raf*]
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 4: 12 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
+d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
-d[Raf*]/dt = + kcat1[RasGTP][Raf]/K1m+[Raf] - kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+[Raf] = [Raf0] - [Raf*]
+
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
 
 [p-MEK] = [MEK0] - [MEK] - [pp-MEK]
 
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
+
 [p-ERK] = [ERK0] - [ERK] - [pp-ERK]
-
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
-[Raf] = [Raf0] - [Raf*]
 
 Size of DAE system 5: 10 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
+d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
-d[Raf*]/dt = + kcat1[RasGTP][Raf]/K1m+[Raf] - kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+[Raf] = [Raf0] - [Raf*]
+
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
 
 [p-MEK] = [MEK0] - [MEK] - [pp-MEK]
 
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
 [pp-ERK] = [ERK0] - [ERK] - [p-ERK]
 
-[Raf] = [Raf0] - [Raf*]
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 6: 12 right-side terms.
 
 
-[ERK] = [ERK0] - [p-ERK] - [pp-ERK]
-
-d[Raf*]/dt = + kcat1[RasGTP][Raf]/K1m+[Raf] - kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
 [pp-MEK] = [MEK0] - [MEK] - [p-MEK]
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
-
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
-
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+[ERK] = [ERK0] - [p-ERK] - [pp-ERK]
 
 [Raf] = [Raf0] - [Raf*]
+
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
+
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
+
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 7: 14 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
-
-d[Raf*]/dt = + kcat1[RasGTP][Raf]/K1m+[Raf] - kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
 [pp-MEK] = [MEK0] - [MEK] - [p-MEK]
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
-
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
-
-[p-ERK] = [ERK0] - [ERK] - [pp-ERK]
-
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
 
 [Raf] = [Raf0] - [Raf*]
+
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
+
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
+
+[p-ERK] = [ERK0] - [ERK] - [pp-ERK]
 
 Size of DAE system 8: 12 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
-
-d[Raf*]/dt = + kcat1[RasGTP][Raf]/K1m+[Raf] - kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
 [pp-MEK] = [MEK0] - [MEK] - [p-MEK]
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
 
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+[Raf] = [Raf0] - [Raf*]
 
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
+
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
 [pp-ERK] = [ERK0] - [ERK] - [p-ERK]
 
-[Raf] = [Raf0] - [Raf*]
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 9: 14 right-side terms.
 
 
-[ERK] = [ERK0] - [p-ERK] - [pp-ERK]
-
 [Raf*] = [Raf0] - [Raf]
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
+[ERK] = [ERK0] - [p-ERK] - [pp-ERK]
+
+d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
 [MEK] = [MEK0] - [p-MEK] - [pp-MEK]
 
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
-d[Raf]/dt = - kcat1[RasGTP][Raf]/K1m+[Raf] + kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 10: 14 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
-
 [Raf*] = [Raf0] - [Raf]
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
+
+d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
 [MEK] = [MEK0] - [p-MEK] - [pp-MEK]
 
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 [p-ERK] = [ERK0] - [ERK] - [pp-ERK]
-
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
-d[Raf]/dt = - kcat1[RasGTP][Raf]/K1m+[Raf] + kcat2[Pase1][Raf*]/K2m+[Raf*]
 
 Size of DAE system 11: 12 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
-
 [Raf*] = [Raf0] - [Raf]
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
+
+d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
 [MEK] = [MEK0] - [p-MEK] - [pp-MEK]
 
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
-
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
 [pp-ERK] = [ERK0] - [ERK] - [p-ERK]
 
-d[Raf]/dt = - kcat1[RasGTP][Raf]/K1m+[Raf] + kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 12: 14 right-side terms.
 
 
-[ERK] = [ERK0] - [p-ERK] - [pp-ERK]
-
 [Raf*] = [Raf0] - [Raf]
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+[ERK] = [ERK0] - [p-ERK] - [pp-ERK]
+
+d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
+
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
 
 [p-MEK] = [MEK0] - [MEK] - [pp-MEK]
 
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
-d[Raf]/dt = - kcat1[RasGTP][Raf]/K1m+[Raf] + kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 13: 12 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
-
 [Raf*] = [Raf0] - [Raf]
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
+
+d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
+
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
 
 [p-MEK] = [MEK0] - [MEK] - [pp-MEK]
 
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
+
 [p-ERK] = [ERK0] - [ERK] - [pp-ERK]
-
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
-d[Raf]/dt = - kcat1[RasGTP][Raf]/K1m+[Raf] + kcat2[Pase1][Raf*]/K2m+[Raf*]
 
 Size of DAE system 14: 10 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
-
 [Raf*] = [Raf0] - [Raf]
 
-d[pp-MEK]/dt = + kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[pp-MEK]/dt = + (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
+
+d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
+
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
 
 [p-MEK] = [MEK0] - [MEK] - [pp-MEK]
 
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
 [pp-ERK] = [ERK0] - [ERK] - [p-ERK]
 
-d[Raf]/dt = - kcat1[RasGTP][Raf]/K1m+[Raf] + kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 15: 12 right-side terms.
 
 
-[ERK] = [ERK0] - [p-ERK] - [pp-ERK]
-
 [Raf*] = [Raf0] - [Raf]
 
 [pp-MEK] = [MEK0] - [MEK] - [p-MEK]
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+[ERK] = [ERK0] - [p-ERK] - [pp-ERK]
 
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
 
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
-d[Raf]/dt = - kcat1[RasGTP][Raf]/K1m+[Raf] + kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
+
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 16: 14 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
-
 [Raf*] = [Raf0] - [Raf]
 
 [pp-MEK] = [MEK0] - [MEK] - [p-MEK]
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
 
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
+
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
+
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
+d[pp-ERK]/dt = + (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 [p-ERK] = [ERK0] - [ERK] - [pp-ERK]
-
-d[pp-ERK]/dt = + kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
-
-d[Raf]/dt = - kcat1[RasGTP][Raf]/K1m+[Raf] + kcat2[Pase1][Raf*]/K2m+[Raf*]
 
 Size of DAE system 17: 12 right-side terms.
 
 
-d[ERK]/dt = - kcat7[pp-MEK][ERK]/K7m+[ERK] + kcat9[Pase3][p-ERK]/K9m+[p-ERK]
-
 [Raf*] = [Raf0] - [Raf]
 
 [pp-MEK] = [MEK0] - [MEK] - [p-MEK]
 
-d[MEK]/dt = - kcat3[Raf*][MEK]/K3m+[MEK] + kcat5[Pase2][p-MEK]/K5m+[p-MEK]
+d[ERK]/dt = - (kcat7[pp-MEK][ERK])/(K7m+[ERK]) + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
 
-d[p-MEK]/dt = + kcat3[Raf*][MEK]/K3m+[MEK] - kcat4[Raf*][p-MEK]/K4m+[p-MEK] - kcat5[Pase2][p-MEK]/K5m+[p-MEK] + kcat6[Pase2][pp-MEK]/K6m+[pp-MEK]
+d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
 
-d[p-ERK]/dt = + kcat7[pp-MEK][ERK]/K7m+[ERK] - kcat8[pp-MEK][p-ERK]/K8m+[p-ERK] - kcat9[Pase3][p-ERK]/K9m+[p-ERK] + kcat10[Pase3][pp-ERK]/K10m+[pp-ERK]
+d[MEK]/dt = - (kcat3[Raf*][MEK])/(K3m+[MEK]) + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
+
+d[p-MEK]/dt = + (kcat3[Raf*][MEK])/(K3m+[MEK]) - (kcat4[Raf*][p-MEK])/(K4m+[p-MEK]) - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
 
 [pp-ERK] = [ERK0] - [ERK] - [p-ERK]
 
-d[Raf]/dt = - kcat1[RasGTP][Raf]/K1m+[Raf] + kcat2[Pase1][Raf*]/K2m+[Raf*]
+d[p-ERK]/dt = + (kcat7[pp-MEK][ERK])/(K7m+[ERK]) - (kcat8[pp-MEK][p-ERK])/(K8m+[p-ERK]) - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of DAE system 18: 14 right-side terms.
 
