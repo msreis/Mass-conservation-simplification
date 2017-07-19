@@ -146,11 +146,11 @@ foreach my $reaction (@reactions)
     # For enzymes that are not dependent variables, we consider them
     # as constants and use the Michaelis-Menten equation.
     #
-    $ODE{$substrate} .= " - kcat$id" . "[$enzyme][$substrate]/K$id" 
-                        . "m+[$substrate]"; 
+    $ODE{$substrate} .= " - (kcat$id" . "[$enzyme][$substrate])/(K$id" 
+                        . "m+[$substrate])"; 
 
-    $ODE{$product} .= " + kcat$id" . "[$enzyme][$substrate]/K$id"
-                        . "m+[$substrate]"; 
+    $ODE{$product} .= " + (kcat$id" . "[$enzyme][$substrate])/(K$id"
+                        . "m+[$substrate])"; 
 
   }
   else
