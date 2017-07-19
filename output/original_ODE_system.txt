@@ -1,25 +1,25 @@
-d[p-MEK]/dt = + k3cat[Raf*-MEK] - k4[Raf*][p-MEK] + k-4[Raf*-p-MEK] - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-ME$
+d[p-ERK]/dt = + k7cat[pp-MEK-ERK] - k8[pp-MEK][p-ERK] + k-8[pp-MEK-p-ERK] - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
+
+d[pp-MEK]/dt = + k4cat[Raf*-p-MEK] - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK]) - k7[pp-MEK][ERK] + k-7[pp-MEK-ERK] - k7cat[pp-MEK-ERK] - k8[pp-MEK][p-ERK] + k-8[pp-MEK-p-ERK] - k8cat[pp-MEK-p-ERK]
+
+d[pp-MEK-p-ERK]/dt = + k8[pp-MEK][p-ERK] - k-8[pp-MEK-p-ERK] - k8cat[pp-MEK-p-ERK]
+
+d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
+
+d[pp-ERK]/dt = + k8cat[pp-MEK-p-ERK] - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
+
+d[p-MEK]/dt = + k3cat[Raf*-MEK] - k4[Raf*][p-MEK] + k-4[Raf*-p-MEK] - (kcat5[Pase2][p-MEK])/(K5m+[p-MEK]) + (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK])
+
+d[ERK]/dt = - k7[pp-MEK][ERK] + k-7[pp-MEK-ERK] + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
+
+d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*]) - k3[Raf*][MEK] + k-3[Raf*-MEK] - k3cat[Raf*-MEK] - k4[Raf*][p-MEK] + k-4[Raf*-p-MEK] - k4cat[Raf*-p-MEK]
+
+d[pp-MEK-ERK]/dt = + k7[pp-MEK][ERK] - k-7[pp-MEK-ERK] - k7cat[pp-MEK-ERK]
 
 d[Raf*-MEK]/dt = + k3[Raf*][MEK] - k-3[Raf*-MEK] - k3cat[Raf*-MEK]
 
 d[Raf*-p-MEK]/dt = + k4[Raf*][p-MEK] - k-4[Raf*-p-MEK] - k4cat[Raf*-p-MEK]
 
-d[Raf*]/dt = + (kcat1[RasGTP][Raf])/(K1m+[Raf]) - (kcat2[Pase1][Raf*])/(K2m+[Raf*]) - k3[Raf*][MEK] + k-3[Raf*-MEK] - k3cat[Raf*-MEK] - k4[Raf$
-
-d[p-ERK]/dt = + k7cat[pp-MEK-ERK] - k8[pp-MEK][p-ERK] + k-8[pp-MEK-p-ERK] - (kcat9[Pase3][p-ERK])/(K9m+[p-ERK]) + (kcat10[Pase3][pp-ERK])/(K10$
-
-d[pp-MEK-ERK]/dt = + k7[pp-MEK][ERK] - k-7[pp-MEK-ERK] - k7cat[pp-MEK-ERK]
-
 d[MEK]/dt = - k3[Raf*][MEK] + k-3[Raf*-MEK] + (kcat5[Pase2][p-MEK])/(K5m+[p-MEK])
-
-d[Raf]/dt = - (kcat1[RasGTP][Raf])/(K1m+[Raf]) + (kcat2[Pase1][Raf*])/(K2m+[Raf*])
-
-d[ERK]/dt = - k7[pp-MEK][ERK] + k-7[pp-MEK-ERK] + (kcat9[Pase3][p-ERK])/(K9m+[p-ERK])
-
-d[pp-MEK]/dt = + k4cat[Raf*-p-MEK] - (kcat6[Pase2][pp-MEK])/(K6m+[pp-MEK]) - k7[pp-MEK][ERK] + k-7[pp-MEK-ERK] - k7cat[pp-MEK-ERK] - k8[pp-MEK$
-
-d[pp-MEK-p-ERK]/dt = + k8[pp-MEK][p-ERK] - k-8[pp-MEK-p-ERK] - k8cat[pp-MEK-p-ERK]
-
-d[pp-ERK]/dt = + k8cat[pp-MEK-p-ERK] - (kcat10[Pase3][pp-ERK])/(K10m+[pp-ERK])
 
 Size of the original ODE system: 48 right-side terms.
